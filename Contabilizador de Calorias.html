@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Calorías</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Contador de Calorías</h1>
+
+        <!-- Sección de Comidas -->
+        <div class="section">
+            <h2>Comidas</h2>
+            <select id="categoriaComida">
+                <option value="">Seleccionar Categoría</option>
+                <option value="desayuno">Desayuno</option>
+                <option value="almuerzo">Almuerzo</option>
+                <option value="cena">Cena</option>
+                <option value="snack">Snack</option>
+            </select>
+            <input type="number" id="caloriasComida" placeholder="Calorías consumidas">
+            <button id="guardarComida" disabled>Guardar Comida</button>
+        </div>
+
+        <!-- Sección de Ejercicio -->
+        <div class="section">
+            <h2>Ejercicio</h2>
+            <select id="categoriaEjercicio">
+                <option value="">Seleccionar Ejercicio</option>
+                <option value="correr">Correr</option>
+                <option value="nadar">Nadar</option>
+                <option value="gimnasio">Gimnasio</option>
+                <option value="caminar">Caminar</option>
+            </select>
+            <input type="number" id="caloriasEjercicio" placeholder="Calorías quemadas">
+            <button id="guardarEjercicio" disabled>Guardar Ejercicio</button>
+        </div>
+
+        <!-- Resumen de Calorías -->
+        <div class="summary">
+            <h2>Resumen de Calorías</h2>
+            <p>Calorías Consumidas: <span id="totalComida">0</span> kcal</p>
+            <p>Calorías Quemadas: <span id="totalEjercicio">0</span> kcal</p>
+            <p>Balance: <span id="diferencia">0</span> kcal</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
